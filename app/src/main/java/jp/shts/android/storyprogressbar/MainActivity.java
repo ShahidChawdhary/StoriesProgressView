@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity implements StoriesProgressVi
         // storiesProgressView.setStoriesCountWithDurations(durations);
         storiesProgressView.setStoriesListener(this);
 //        storiesProgressView.startStories();
-        counter = 2;
         storiesProgressView.startStories(counter);
 
         image = (ImageView) findViewById(R.id.image);
