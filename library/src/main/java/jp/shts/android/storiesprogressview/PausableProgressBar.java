@@ -124,12 +124,14 @@ final class PausableProgressBar extends FrameLayout {
     public void pauseProgress() {
         if (animation != null) {
             animation.pause();
+            frontProgressView.setBackgroundResource(R.color.progress_secondary);
         }
     }
 
     public void resumeProgress() {
         if (animation != null) {
             animation.resume();
+            frontProgressView.setBackgroundResource(R.color.progress_max_active);
         }
     }
 
